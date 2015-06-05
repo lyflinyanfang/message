@@ -54,9 +54,7 @@ function updateChat(){
 			success: function(data){
 				if(data.text){
 					for(var i = 0; i < data.text.length; i++){
-						$('#chat-row').append($("
-							"+ data.text[i] +"
-						"));
+						$('#chat-row').append($(""+ data.text[i] +""));
 					}
 				}
 				/*manage position of current chat*/
